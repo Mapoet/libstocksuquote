@@ -1,0 +1,14 @@
+- Nov 26 2014
+  release 0.5.1 of libustocks
+  Fixed yahoo api.
+- Aug 06 2000
+  release 0.4.0
+  libstocks supports now historical quotes.
+- jul 20 2000
+  release 0.3.0
+  libstocks is now under the LGPL license.
+- jun 29 2000
+  release 0.2.0
+  Libstocks supports now a lot of markets.
+- dim jun 25 17:15:16 CEST 2000
+  First release of libstocks. This release is 0.1.0

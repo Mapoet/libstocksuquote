@@ -1,0 +1,18 @@
+Try this to install libstocks
+
+./configure
+make
+make install
+
+This installs :
+- libstocks.a in /usr/lib
+- stocks.h in /usr/include
+- and libstocks_client in /usr/bin
+
+You can delete libstocks_client it is more used as exemple on how to use 
+libstocks.
+
+if you want to change the installation directory try:
+
+./configure --prefix=/the/directory/you/want
+

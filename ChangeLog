@@ -1,0 +1,58 @@
+Version 0.5.1
+    (2014/26/10)
+    - Initial fork of libstocks (wich is pretty old, but still good)
+    - (http.c) Added host option now necessary by yahoo.
+    - (stocks.c) Added proper url for yahoo stocks server.
+Version 0.5.0
+	(2000/05/09)
+	- (http.c) Change the process to find the header.
+	Somebody has reported to me that its headers are not separated by
+	"\r\n" string.
+	(2000/04/09)
+	- (csv.c) Indices history files where not parsed because they do not
+	have volume. Now, get_history_csv function does not return an error
+	when it does not find a volume.
+	- (csv.c) Mutual funds where seen as invalid by the parse_csv_file
+	function. The process has been changed.
+	
+Version 0.4.0
+	(2000/01/08)
+	- (history.c) get_history_csv and get_stock_history function 
+	get historical quotes for one stock.
+	- (stocks.h, csv.c, list.c, client.c)
+	Symbol, Name, Time and Date are now dynamically allocated.
+	This minimizes the stock structure size. 
+	- (stocks.c) parse_csv_file function return code was bad
+	tested in download_stocks function.
+	- (stocks.c) free the downloaded datas in the download_stocks
+	function.
+	
+Version 0.3.0
+	(2000/20/07)
+	- (COPYING) libstocks is now under the LGPL license.
+	- (http.c) Add some little modifications to compile under Windows.
+   	Thanks to Anakim Border for the patch.
+	- (currency.c) Add this file to support single currency exchange rate.
+	
+	(2000/10/07) 
+	- (csv.c) Add currency exchange rates support with a small modification
+	on the csv parsing process.
+	Thanks to Ulric Eriksson (from the Siag Office project) for the patch.
+	- (csv.c) Add csv_strtok to prevent bad csv parsing when a ',' is 
+	present in the name of the stock.
+	Thanks to Julio Lucas to have found this bug and to suggest me a patch.
+	
+Version 0.2.0
+	- Now libstocks supports a lot of markets
+	(United States, Canada, Mexico, Brasil, Argentina, Venezuela, Chili, 
+	Australia and European markets)
+	- stocks.c has been strongly modified
+	- libstocks_client displays now the stocks name	
+	- parse_csv supports the stock name in the csv file
+	- Parse_csv is now country independant.
+	It then corrects a bug (csv was bad parsed in v0.1.0 for US quotes)
+	- Correct a bug in proxy support
+	
+Version 0.1.0
+	-Support of US and European stocks markets
+	-compiles on Linux (Mandrake 7 and Solaris 2.6)
