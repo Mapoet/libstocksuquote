@@ -1,17 +1,11 @@
 # The Stocks Quotes Library Utility (libustocks)
-
-[Repository](http://github.org/notetiene/libstocksuquote)
-
 Version 0.5.1 November 26, 2014
-
-This is a fork of libstocks
-
-Maintained by Etienne Prud'homme (e.e.f.prudhomme@gmail.com)
-
-Originally written by Eric Laeuffer (laeuffer@cybercable.fr)
 
 Libstocks is a C library which can be included in any software to fetch stocks
 quotes.
+
+Maintained by Etienne Prud'homme (e.e.f.prudhomme@gmail.com)  
+Originally written by Eric Laeuffer (laeuffer@cybercable.fr)  
 
 ## Features:
 
@@ -40,7 +34,7 @@ for exemple :
 
 `$ libstocks_client "RHAT+13000.PA"`
 
-this displays the quotes of RedHat and Alcatel (Paris) stocks like this:
+This displays the quotes of RedHat and Alcatel (Paris) stocks like this:
 
     
     "17h36" 
@@ -73,7 +67,9 @@ with the country extension (13000.PA=Alcatel Paris)
 
 _Note: use yahoo symbol lookup to find stocks symbol)_
 
-All symbols have to be separated by "+" caracter. As exemple some symbols
+All symbols have to be separated **by "+" caracter.**
+
+As exemple some symbols:
 
     
     USA : BOBJ.US, ENT.US
@@ -107,3 +103,4 @@ Here my test command:
 _(the date format is YY/MM/DD)_
 
 This exemple displays on the screen the DATE, OPEN, HIGH, LOW, CLOSE, VOLUME
+
